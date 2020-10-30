@@ -9,6 +9,7 @@ export default class Counter extends Component {
             count: 0,
             component: false
         }
+        console.log("constructor...");
     }
 
     handleAddCount = () => {
@@ -20,6 +21,17 @@ export default class Counter extends Component {
 
     componentDidUpdate() {
         console.log(`Update terjadi... `);
+    }
+
+    getSnapshotBeforeUpdate() {
+        console.log("getSnapshotBeforeUpdate");
+        return true
+    }
+
+    shouldComponentUpdate() {
+        console.log("shouldComponentUpdate");
+        return true
+        
     }
 
     componentWillUnmount() {

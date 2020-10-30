@@ -19,6 +19,10 @@ export default class ListBooks extends Component {
         console.log("Constructor");
     }
 
+    getSnapshotBeforeUpdate() {
+        console.log("Should compenent Update ?");
+    }
+
     componentDidMount() {
         console.log("Component Did Mount");
     }

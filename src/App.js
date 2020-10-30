@@ -2,6 +2,7 @@ import './App.css';
 import Books from './components/class_component/books';
 import Counter from './components/class_component/counter';
 import ListBooks from './components/class_component/list-books';
+import CounterFC from './components/functional_component/counter';
 import ListBooksFunction from './components/functional_component/list-books';
 function App() {
   return (
@@ -10,7 +11,8 @@ function App() {
       {/* <ListBooks/> */}
       {/* Functional Component */}
       {/* <ListBooksFunction /> */}
-      <Counter />
+      {/* <Counter /> */}
+      <CounterFC />
     </div>
   );
 }
